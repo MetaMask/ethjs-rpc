@@ -39,18 +39,24 @@ EthRPC.prototype.sendAsync = function sendAsync(payload, cb) {
   const self = this;
   self.idCounter = self.idCounter % self.options.max;
   const parsedPayload = createPayload(payload, self.idCounter++);
-  self.currentProvider.sendAsync(parsedPayload, (err, response) => {
-    const responseObject = response || {};
+  try {
+    self.currentProvider.sendAsync(parsedPayload, (err, response) => {
+      const responseObject = response || {};
 
-    if (err || responseObject.error) {
-      const payloadErrorMessage = `[ethjs-rpc] ${(responseObject.error && 'rpc' || '')} error with payload ${JSON.stringify(parsedPayload, null, self.options.jsonSpace)} ${String(err) || (JSON.stringify(responseObject.error, null, self.options.jsonSpace))}`;
-      const payloadError = new Error(payloadErrorMessage);
-      payloadError.value = (err || responseObject.error);
-      return cb(payloadError, null);
-    }
+      if (err || responseObject.error) {
+        const payloadErrorMessage = `[ethjs-rpc] ${(responseObject.error && 'rpc' || '')} error with payload ${JSON.stringify(parsedPayload, null, self.options.jsonSpace)} ${String(err) || (JSON.stringify(responseObject.error, null, self.options.jsonSpace))}`;
+        const payloadError = new Error(payloadErrorMessage);
+        payloadError.value = (err || responseObject.error);
+        return cb(payloadError, null);
+      }
 
-    return cb(null, responseObject.result);
-  });
+      return cb(null, responseObject.result);
+    });
+  } catch (errorValue) {
+    const sendAsyncError = new Error('[ethjs-rpc] error while sending async request to provider..');
+    sendAsyncError.value = errorValue;
+    cb(sendAsyncError, null);
+  }
 };
 
 /**

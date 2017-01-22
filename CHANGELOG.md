@@ -1,3 +1,7 @@
+# 0.1.3 -- handle 405
+
+1. Handle 405 errors better form the provider
+
 # 0.1.2 -- louder errors
 
 1. Louder errors

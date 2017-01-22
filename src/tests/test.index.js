@@ -61,6 +61,17 @@ describe('ethjs-rpc', () => {
       });
     });
 
+    it('should handle 405 invalid errors', (done) => {
+      const eth = new EthRPC({ sendAsync: () => {
+        throw new Error('something!');
+      } });
+      eth.sendAsync({ method: 'eth_accounts' }, (err, accounts1) => {
+        assert.equal(typeof err, 'object');
+        assert.equal(accounts1, null);
+        done();
+      });
+    });
+
     it('should handle invalid errors', (done) => {
       const eth = new EthRPC({ sendAsync: (payload, cb) => {
         cb('Some error!');
