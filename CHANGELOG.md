@@ -1,4 +1,16 @@
-# 0.1.9 -- added promises
+# 0.3.0 -- maintenance update
+
+1. Renamed to `@metamask/ethjs-rpc`
+2. Fixed and removed broken devDependencies
+3. Require minimum nodejs v8.17, npm v6
+4. Repository location changed
+
+Internal:
+1. CI migrated from Travis to Github Actions
+2. `npm test-travis` is now `npm test:coverage`
+3. Removed coveralls
+
+# 0.2.0 -- added promises
 
 1. Fixed major callback / promise issue thanks to Kumavis!! (i.e. unhandled promise rejection swollowing errors)
 

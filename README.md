@@ -1,17 +1,6 @@
 ## ethjs-rpc
 
 <div>
-  <!-- Dependency Status -->
-  <a href="https://david-dm.org/ethjs/ethjs-rpc">
-    <img src="https://david-dm.org/ethjs/ethjs-rpc.svg"
-    alt="Dependency Status" />
-  </a>
-
-  <!-- devDependency Status -->
-  <a href="https://david-dm.org/ethjs/ethjs-rpc#info=devDependencies">
-    <img src="https://david-dm.org/ethjs/ethjs-rpc/dev-status.svg" alt="devDependency Status" />
-  </a>
-
   <!-- NPM Version -->
   <a href="https://www.npmjs.org/package/ethjs-rpc">
     <img src="http://img.shields.io/npm/v/ethjs-rpc.svg"
@@ -91,7 +80,7 @@ There is always a lot of work to do, and will have many rules to maintain. So pl
 
 Please consult our [Code of Conduct](CODE_OF_CONDUCT.md) docs before helping out.
 
-We communicate via [issues](https://github.com/ethjs/ethjs-rpc/issues) and [pull requests](https://github.com/ethjs/ethjs-rpc/pulls).
+We communicate via [issues](https://github.com/MetaMask/ethjs-rpc/issues) and [pull requests](https://github.com/ethjs/ethjs-rpc/pulls).
 
 ## Important documents
 
