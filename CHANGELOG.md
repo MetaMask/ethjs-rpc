@@ -5,6 +5,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.3.0]
+### Changed
+- update repo url
+- move package to @metamask namespace
+- deprecate nodejs <8.17, npm<6
+### Internal
+- add publishConfig to package.json
+- devDeps: cross-env@1.0.7->6.0.3
+- remove coveralls, travis-ci. npm test:coverage replaces test-travis/coveralls
+- devDeps/test: ethereumjs-testrpc->ganache-cli
+- devDeps: remove legacy check-es3-syntax-cli
+- ci: Add Github Actions workflows
+
 ### Changed
 - Renamed to `@metamask/ethjs-rpc`
 - Fixed and removed broken devDependencies
@@ -54,7 +68,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - linting
   - basic exports
 
-[Unreleased]: https://github.com/MetaMask/ethjs-rpc/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/MetaMask/ethjs-rpc/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/MetaMask/ethjs-rpc/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/MetaMask/ethjs-rpc/compare/v0.1.7...v0.2.0
 [0.1.7]: https://github.com/MetaMask/ethjs-rpc/compare/v0.1.6...v0.1.7
 [0.1.6]: https://github.com/MetaMask/ethjs-rpc/compare/v0.1.5...v0.1.6
