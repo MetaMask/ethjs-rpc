@@ -6,6 +6,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0]
+### Uncategorized
+- ci: specify npm-publish env for publish-release action
+- 0.3.0
+- bump nvmrc v10->v12
+- ci: use actions allowing changelog with dashes in version
+- move package to @metamask namespace
+- update repo url
+- add publishConfig to package.json
+- ci: action-npm-publish@v2->v1.1.0
+- devDeps: cross-env@1.0.7->6.0.3
+- update changelog
+- ci: add create-release-pr workflow
+- deprecate nodejs <8.17, npm<6
+- remove coveralls, travis-ci. npm test:coverage replaces test-travis/coveralls
+- devDeps/test: ethereumjs-testrpc->ganache-cli
+- devDeps: remove legacy check-es3-syntax-cli
+- ci: ignore changed dist/*.map files
+- ci: Add Github Actions workflows
+- latest
+- Promise to callback ([#6](https://github.com/MetaMask/ethjs-rpc/pull/6))
+- correctly convert promise to callback + fix test to catch unhandled error
+- test - add test for twice called callbacks
+- Update CHANGELOG.md
+- Update package.json
+- only return a promise if no callback provided - otherwise instrument the promise so it doesnt throw unhandled rejections
+- Update package.json
+- Stops swallowing of JSON-RPC error details.
+- added promise support
+
 ## [0.3.0]
 ### Changed
 - Renamed to `@metamask/ethjs-rpc`
@@ -55,7 +85,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - linting
   - basic exports
 
-[Unreleased]: https://github.com/MetaMask/ethjs-rpc/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/MetaMask/ethjs-rpc/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/MetaMask/ethjs-rpc/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/MetaMask/ethjs-rpc/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/MetaMask/ethjs-rpc/compare/v0.1.7...v0.2.0
 [0.1.7]: https://github.com/MetaMask/ethjs-rpc/compare/v0.1.6...v0.1.7
