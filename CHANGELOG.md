@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0]
+### Uncategorized
+- npm audit fix; npm dedupe
+- devDeps: babel-*@6 -> @babel/*@^7
+- devDeps: json-loader@0.5.4->^0.5.7
+- devdeps: webpack@2.1.0-beta.15->^3.12.0
+
 ## [0.3.0]
 ### Changed
 - Renamed to `@metamask/ethjs-rpc`
@@ -55,7 +62,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - linting
   - basic exports
 
-[Unreleased]: https://github.com/MetaMask/ethjs-rpc/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/MetaMask/ethjs-rpc/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/MetaMask/ethjs-rpc/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/MetaMask/ethjs-rpc/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/MetaMask/ethjs-rpc/compare/v0.1.7...v0.2.0
 [0.1.7]: https://github.com/MetaMask/ethjs-rpc/compare/v0.1.6...v0.1.7
