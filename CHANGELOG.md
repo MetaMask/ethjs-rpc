@@ -7,13 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [0.3.1]
-### Uncategorized
-- npm v5 compat: rename prepublish script to prepare
-- chore: fix remaining repo links to point to https://github.com/MetaMask/ethjs-rpc
-- npm audit fix; npm dedupe
-- devDeps: babel-*@6 -> @babel/*@^7
-- devDeps: json-loader@0.5.4->^0.5.7
-- devdeps: webpack@2.1.0-beta.15->^3.12.0
+### Changed
+- Update babel from 6.18.2 to 7.2 ([#24](https://github.com/MetaMask/ethjs-rpc/pull/24))
+- Update webpack from v2.1.0-beta.15 to 3.12.0 ([#23](https://github.com/MetaMask/ethjs-rpc/pull/23))
 
 ## [0.3.0]
 ### Changed
